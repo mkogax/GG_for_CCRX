@@ -6,6 +6,8 @@
 
 ここでは GG for CCRX について説明します。  
 
+https://user-images.githubusercontent.com/11693904/174795973-64f355ec-863e-4973-9ffd-dcf78ff891ba.mp4
+
 ## ソフトウェア環境
 
 ルネサスエレクトロニクス株式会社の [統合開発環境 CS+](https://www.renesas.com/jp/ja/software-tool/cs) と [CC-RXコンパイラ](https://www.renesas.com/jp/ja/software-tool/cc-compiler-package-rx-family) を使います。
