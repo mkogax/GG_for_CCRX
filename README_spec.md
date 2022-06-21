@@ -6,22 +6,7 @@ GG はシリアルコンソールを実現するための支援ライブラリ�
 
 コマンドラインインターフェース（コンソールの基本機能）が実現できます。もちろん自分で作ったコマンドの追加もできます。
 
-```text
-** GG for CCRX **
->help
-        help [cmd..]                  : command help
--- memory command --
-          md [addr [alen]]            : mem dump
-          ms addr data..              : mem set
-          mf addr alen data           : mem fill
--- TP command --
-          tp [#1 [#2]]                : TP(test point) select
->md 0x1000 0x30
-00001000  F0 0D F8 FF A4 0E 00 00  23 17 F8 FF 00 0E F8 FF  ........ #.......
-00001010  49 0D F8 FF 04 0E F8 FF  C8 0E F8 FF DA 0E F8 FF  I....... ........
-00001020  00 01 00 00 64 0E F8 FF  70 0E F8 FF 7C 0E F8 FF  ....d... p...|...
->
-```
+https://user-images.githubusercontent.com/11693904/174793823-f4d11769-0fdb-4082-bdc4-7cad3af887cc.mp4
 
 ### 通信仕様
 
@@ -94,6 +79,8 @@ void main(void)
 通常のセットアップだとTP機能は無効になっています。  
 gg_sysdef.hでGG_TP_ENABLEを定義すればTP機能が有効になります。  
 TP機能を使えばプログラムの処理時間の測定や割込みやRTOSのタスク処理の状況確認ができるようになります。  
+
+https://user-images.githubusercontent.com/11693904/174793938-c82fd3f7-a165-405c-910a-76ffac327349.mp4
 
 #### TP機能の仕組み
 
