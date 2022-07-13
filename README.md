@@ -1,8 +1,10 @@
 # GG for CCRX
 
+GG はシリアルコンソールを実現するための支援ライブラリです。コンソールを組み込むための補助的なツール（例えば書式付出力や文字列変換）を含みます。
+
 [GG for CCRX](https://github.com/mkogax/GG_for_CCRX) は ルネサスエレクトロニクス株式会社の [RX 32ビット高性能・高効率MCU](https://www.renesas.com/jp/ja/products/microcontrollers-microprocessors/rx-32-bit-performance-efficiency-mcus) でのポーティング例です。ここにあるソースを使ってご自分でプロジェクトを作り自動生成プログラム（FITモジュール）を導入してご利用ください。（サンプルとしてプロジェクトファイルごと全部公開できないか考えたのですが、確認取れてないので自前で作った分だけ公開しています)  
 
-この他にArduino用として [GG for Arduino](https://github.com/mkogax/GG_for_Arduino) もあります。Arduinoの公式ライブラリに登録されておりArduino IDEのライブラリマネージャからダウンロードできます。  
+[GG for Arduino](https://github.com/mkogax/GG_for_Arduino) は Arduinoでのポーティング例です。Arduinoの公式ライブラリに登録されておりArduino IDEのライブラリマネージャからダウンロードできます。  
 
 ここでは GG for CCRX について説明します。  
 
@@ -46,3 +48,11 @@ SCIのシリアル通信とPCはUSBシリアル変換器で中継します。
 ## GG for CCRX　機能説明
 
 [**GG for CCRX　機能説明**](README_spec.md)
+
+## GG for CCRX　使用例
+
+[**NORTi を RX Smartconfigurator と一緒に使う方法**](https://github.com/mkogax/How-to-use-NORTi-with-RX-Smartconfigurator)
+
+* エミュレータ経由のシリアル通信で利用しています。
+* NORTiのタスク状態表示/操作をGGのコンソールコマンド(taskコマンド)として実装しています。
+* 実行タイミングをTP機能で観測しています。
