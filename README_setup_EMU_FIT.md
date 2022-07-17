@@ -1,4 +1,4 @@
-# GG for CCRX【 EMU+FIT 】セットアップ説明
+# GG for CCRX【 EMU+FIT 】セットアップ説明（工事中）
 
 ## ハードウェア環境
 
@@ -39,7 +39,7 @@ CH1,CH2,GND以外はつなぎません。
 |統合開発環境 CS+ for CC|V8.07.00|
 |Compiler Standard V3 for RX(CC-RX)|V3.04.00|
 
-### ソフトウェア環境の構築手順【 EMU+FIT 】
+### ソフトウェア環境の構築手順【 EMU+FIT 】（工事中）
 
 1. CS+ for CC でプロジェクトを作成（R5F51308AxFP、アプリケーション(CC-RX)、プロジェクト名=任意）
 2. プロジェクトツリーのデバッグツールをRX E2 Liteに変更し、プロパティで・・
