@@ -15,6 +15,8 @@
 #define 	__GG_SYSDEF_H__
 
 
+//#define GG_NO_CONSOLE       // EMUがつながってないとき対応（おまじない）	2022.07.19 M.Kogan
+
 
 //------------------
 //	環境

@@ -11,6 +11,8 @@
 #include "GG.h"             // GGツールヘッダ
 
 
+#ifndef GG_NO_CONSOLE       // EMUがつながってないとき対応（おまじない）	2022.07.19 M.Kogan
+
 #define FC2E0   (*(volatile uint32_t *)0x00084080)
 #define FE2C0   (*(volatile uint32_t *)0x00084090)
 #define DBGSTAT (*(volatile uint32_t *)0x000840C0)
@@ -27,6 +29,19 @@ int chargetEMU(void)        // 1文字入力(EMU)   -1=なし
     if (!(DBGSTAT&RXFL0EN)) return -1;
     return FE2C0;
 }
+
+#else
+
+void charputEMU(int c)      // 1文字出力(EMU)(非debug,何もしない)
+{
+	return 0;
+}
+int chargetEMU(void)        // 1文字入力(EMU)   -1=なし(非debug,なししか返さない)
+{
+	return -1;
+}
+
+#endif
 
 
 static int std_putc_sub(int c)
